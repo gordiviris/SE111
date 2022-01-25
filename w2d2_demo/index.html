@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KT">
+    <meta name="description" content="W2D2 Demo">
+    <title>W2 | Demo</title>
+
+    <!--in document styling in css-->
+    <style>
+        /*must write with css syntax in here!*/
+        /*SELECTING in css & Javascript: select specific elemnet(s) on a page
+            *bt ELEMENT type        ex body, div, p
+            *by ID attribute        ex: #wrapper, #nav, #footer
+            *by Class attribute     ex: coming in week 3 :]
+
+        */
+
+        div {/*applies to ALL divs in the page*/
+            
+            border: 1px solid black;
+            padding: 10px /*adds 10px of sapce to all 4 sides in between content and the border*/;
+            margin: 5px; /*adds 5px of space  */
+        
+        
+        }
+        #wrapper { /*  # specifies ID name. only applies to single element with that ID*/
+
+            background-color: white;
+
+        }
+
+        #school{
+            background-color: yellow;
+
+        }
+
+        #nav, #footer {
+            background-color: rgb(200, 200, 200);
+
+        }
+        
+    </style>
+</head>
+<body style="background-color: grey;">
+    <div id="wrapper"><!--This Div holds and "wraps around/together" all content on the page-->
+        <!--once an ID value has been assigned, it can not be reused in the page-->
+        <!--NAVIGATION-->
+        <h1>Katherine M. Truchon</h1>
+
+
+
+        <div id="nav">
+
+            <!--linking to OUTSIDE  {remote!} pages [these are NOT a part of the webaite, thet exist somewhere else online]-->
+            <!--you need the full uniform resource locator / online path-->
+            <a href="https://www.mwca.edu/" target="_blank"> Visit MECA</a>
+            <!--href holds the URL of website linking to-->
+            <!--targets="_blank" opens the page in a new browser tab-->
+
+            <!--linking to INTERNAL {relative!} pages [these are within the site ie project root directory]-->
+            <!--usually you only need the URI if the folder is set up correctly-->
+            <a href="page2.html" target="_blank">Visit Page 2</a>
+
+            <!--IN PAGE "jump" links: linking to a section within the actual page itself-->
+            <a href="">BIO</a>
+            <a href="">SCHOOLS</a>
+            <a href="">HOBBIES</a>
+            <a href="">Bottom of Page</a>
+
+        </div><!--/ #nav-->
+
+        <!--CONTENT / SECTIONS-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p></p>
+
+            <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D293131581263061&imgrefurl=https%3A%2F%2Fwww.facebook.com%2FLaCanchitaDanbury%2F&tbnid=1cyHEwgeJlp9mM&vet=12ahUKEwi23JCkg7z1AhVArHIEHSLVD1YQMygAegUIARCHAQ..i&docid=6mADwIRhtvTaNM&w=960&h=959&itg=1&q=la%20canchita%20danbury%20ct&ved=2ahUKEwi23JCkg7z1AhVArHIEHSLVD1YQMygAegUIARCHAQ" alt="" style="width:500px;">
+
+        </div><!--/ #bio-->
+
+        <div id="school">
+
+            <h2>Schooling</h2>
+
+            <ol>
+                <li>South Street Elementary School</li>
+                <li>Rogers Park Middle School</li>
+                <l1>Henry Abbott Technical High School</l1>
+                <li>Danbury High School</li>
+                <li>New England Institute of Technology</li>
+            </ol>
+
+        </div><!--/ #school-->
+
+        <div id="hobbies">
+
+        </div><!--/ #hobbies-->
+
+        <!--FOOTER-->
+        <div id="footer">
+
+            <a href="#wrapper">Back to Top</a>
+
+            <p>&copy; 2022 | K ANDRADE | SE111.32</p>
+
+            <!---->
+
+        </div><!--/ #footer-->
+
+
+    </div>
+</body>
+</html>
