@@ -1,0 +1,41 @@
+/*Background*/
+body{
+    background-color: black;
+}
+#wrapper {
+
+    background-color: white;
+    width:980px;
+    padding:25px;
+    margin:auto;
+    border-radius:5px;
+    min-height:1000px;
+}
+.bg {
+
+    background-color: whitesmoke;
+    min-height:50px;
+    text-align: center;
+
+}
+
+#nav{
+    text-align: center;
+}
+
+.page_title{
+    text-align: center;
+}
+
+.lists {
+    font-weight: bolder;
+}
+
+.buttons{
+
+    text-align: center;
+    display: block;
+    background-color: tomato;
+    box-shadow: black;
+    margin: 20px;
+}
