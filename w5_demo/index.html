@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W5D1 - Froms & Tables Demo</title>
+</head>
+<body>
+    <h1>Basic Form Demo!</h1>
+
+    <h2>Form W/o Table</h2>
+    
+    <form>
+        <!-- labels are used to matchup with input elements-->
+        <!--"For" attribute connets labels with input MUT MATCH input's name attribute-->
+        <label for="firstname">First Name: </label>
+        <input type="text" name="firstname" id="firstname">
+        <br>
+
+        <!--From elements are in line elements so must be broken with <br>-->
+        <label for="lastname">Last Name: </label>
+        <input type="text" name="lastname" id="lastname">
+
+        <br>
+
+        <!--required attribute means user MUST fill in that element to continue-->
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email">
+
+        <br>
+        <input type="submit" value="SUBMIT!">
+    </form>
+
+    <h2>Form w/ Table</h2>
+
+    <!-- Form comoes first-->
+    <form>
+        <table>
+            <!--<thead> can be used for column headers-->
+            <!-- <tbody> is required inside of the <table>-->
+                <tbody>
+                    <tr> <!--table row should include one <td> for every possible column, leave blank for no iinfo in that row-->
+                        <td>
+                            <label for="firstname">First Name: </label>
+                        </td>
+                        
+                        <td>
+                            <input type="text" id="firstname" name="firstname" maxlength="50">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="lastname">Last Name: </label>
+                        </td>
+                        
+                        <td>
+                            <input type="text" id="lastname" name="lastname" maxlength="50">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Email: </label>
+                        </td>
+                        
+                        <td>
+                            <input type="text" id="email" name="email" maxlength="50">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="comments">Comments: </label>
+                        </td>
+                        
+                        <td>
+                            <input type="text" name="comments" rows="10" cols="20" placeholder="Your comments here">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="favecolor">Pick your favorite color: </label>
+                        </td>
+                        
+                        <td>
+                            <select name="favecolor">
+                                <option value="red">Red</option>
+                                <option value="orange">Orange</option>
+                                <option value="yellow">Yellow</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                                <option value="inigo">Indigo</option>
+
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="study">Programs of Study: </label>
+                        </td>
+                        <td>
+                            <input type="radio" name="study" value="SE">Software Engineering<br>
+                            <input type="radio" name="study" value="CYB">Cyber Security<br>
+                            <input type="radio" name="study" value="WD">Web Development<br>
+                        </td>
+                    </tr>
+                </tbody>
+        </table>
+    </form>
+</body>
+</html>
