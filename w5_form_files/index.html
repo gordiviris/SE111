@@ -24,50 +24,93 @@
         <tbody>
             <tr>
                 <td>Parent/Guardian Name</td>
+                <td>
+                    <input type="text" required maxlength="20" name="gfirst" id="g-first" placeholder="First Name">
+                    <br>
+                    <input type="text" required maxlength="20" name="gfirst" id="g-last" placeholder="Last Name">
+                </td>
             </tr>
             <tr>
                 <td>Child's First Name</td>
+                <td>
+                    <input type="text" required name="cfirst" id="c-first" placeholder="Child's First Name">
+                </td>
             </tr>
             <tr>
                 <td>Child's Age</td>
+                <td>
+                    <input type="text" required name="age" value="3">
+                </td>
             </tr>
             <tr>
+                <td><h2>Date and Time</h2></td>
                 <td></td>
             </tr>
             <tr>
+                <td>Date</td>
+                <td>
+                    <input type="date" required name="date">
+                </td>
+            </tr>
+            <tr>
+                <td>Start Time</td>
+                <td>
+                    <input type="time" required name="time">
+                </td>
+            </tr>
+            <tr>
+                <td>Number of Guests</td>
+                <td>
+                    <input type="number" name="guests" value="5">
+                </td>
+            </tr>
+            <tr>
+                <td><h2>Food</h2></td>
                 <td></td>
             </tr>
             <tr>
-                <td></td>
+                <td>Size</td>
+                <td>
+                    <input type="radio" name="size" value="sm">sm
+                    <input type="radio" name="size" value="md">med
+                    <input type="radio" name="size" value="lg">lg
+                </td>
+
             </tr>
             <tr>
-                <td></td>
+                <td>Drinks</td>
+                <td>
+                    <input type="checkbox" name="drink1" checked="true" value="coke"><label for="drink1">Coke</label><br>
+
+                    <input type="checkbox" name="drink2" value="sprite"><label for="drink2">Sprite</label><br>
+
+                    <input type="checkbox" name="drink3" value="fruit punch"><label for="drink3">FruitPunch</label><br>
+
+                    <input type="checkbox" name="drink4" value="lemonade"><label for="drink4">Lemonade</label><br>
+
+                    <input type="checkbox" name="drink5" value="iced tea"><label for="drink5">Iced Tea</label>
+                    
+
+                </td>
             </tr>
             <tr>
-                <td></td>
+                <td>Cake</td>
             </tr>
             <tr>
-                <td></td>
+                <td><h2>Decorations</h2></td>
             </tr>
             <tr>
-                <td></td>
+                <td>Color Scheme</td>
             </tr>
             <tr>
-                <td></td>
+                <td>Additional Comments</td>
             </tr>
-            <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
+
         </tbody>
         <tfoot>
             <tr>
                 <td></td>
+                <td>Submit</td>
             </tr>
         </tfoot>
     </table>
