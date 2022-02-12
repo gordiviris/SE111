@@ -1,0 +1,4 @@
+{
+    "git.fetchOnPull": true,
+    "git.enableCommitSigning": true
+}
