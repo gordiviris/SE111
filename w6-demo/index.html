@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Kevin Andrade">
+    <meta name="description" content="into into JS">
+    <title>Week 6 | JS Intro</title>
+</head>
+<body>
+    <!--we should have some sort of HTML in the file-->
+    <h1>Week 6 Intro Demo | Javascript</h1>
+
+    <!--IN DOCUMENT JAVASCRIPT-->
+    <!--In Document: lves within the HTML file (or current resource)-->
+    <script>
+        //everything inside of <script> tags MUST be written in JAVASCRIPT! (single line commenting)
+
+        /*if i want to split some comments
+        onto multiple lines 
+        i caan do this (block commenting)*/
+
+        //creating a variable --> keyword "var"
+        var num1 //declaration only
+        num1 = 7 //once declared, value can be asssigned
+
+        //combine declaration and assignment (defintion) onto one line
+        var num2 = 10
+        var num3 = 7
+
+        //the vars num1, num2, and num3 cannot be used (either in processsing,display, condition) until they have been assigned value
+
+        var sum = num2 + num3
+
+        //DISPLAY DATA TO THE BROWSER -- user can see the information 
+        //alert() creates a pop-up in the browser page to display data
+        //alert() --> print() / output
+        // ' ' denotes a literal string --> combines formatting from .format() in python --> hold var names inside of ${VAR}
+        alert('The Sum is: ${sum} ')
+        console.log('the sum is: ${sum}')
+        //console.log() primarilly ued for TESTING
+        //no physical display in page, only in dev tools
+
+        //"INPUT" gaining data from browser pop-up where user enters infroamton(not from a form)
+        //prompts user for value:script waits for the enter  key/ok button to ne innitiated before moving on
+
+        prompt('Enter your name: ') 
+        console.log('we hae passed the prompt()')
+
+        var name = prompt('Enter your name ')
+        cosole.og(name)
+        slert('hello there, ${name}! | Click ok to continue')
+
+        var lastname = prompt('Enter your name: ')
+        var full = name + " "+ lastname
+
+        console.log(full)
+
+
+    </script>
+</body>
+</html>
