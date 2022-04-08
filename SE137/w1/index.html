@@ -5,18 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 1 Bio Page</title>
-
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        .hide{ 
+            display: none;
+            
+        }
+    </style>
 </head>
 <body>
+    
     <h1>Kevin Andrade</h1>
 
     <hr>
 
     <div id="nav">
 
-        <a href="#">Bio</a>
-        <a href="#">Education</a>
-        <a href="#">Hobbies</a>
+        <a href="#" id="biolink">Bio</a>
+        <a href="#" id="edlink">Education</a>
+        <a href="#" id="hobbieslink">Hobbies</a>
 
     </div>
 
@@ -24,7 +33,7 @@
 
     <div id="main">
 
-        <div id="bio">
+        <div id="bio" class="hide">
             <h2>My Bio</h2>
             
             <img src="images\!GORDIVIRIS-PROD.LOGO.png" alt="Gordiviris Logo" style="background-color: black; max-width: 30%; max-height: 30%;">
@@ -34,10 +43,10 @@
             <hr>
         </div><!--#bio-->
 
-        <div id="ed"><!--#ed-->
+        <div id="ed" class="hide"><!--#ed-->
             <h2>Schooling</h2>
 
-            <ol>
+            <ul>
                 
                 <li>South Street Elementary School</li>
 
@@ -49,8 +58,21 @@
 
                 <li><a href = "https://www.neit.edu/" target="_blank">New England Institute of Technology</a></li>
 
+        <hr>
+        </div> <!--#ed-->
 
-        <div id="hobbies">
+        
+
+        <div id="hobbies" class="hide">
+            <h2>Hobbies</h2>
+
+            <ol class="lists">
+                <li>Soccer</li>
+                
+                <li>Gaming</li>
+                
+                <li>Travelling</li>
+                <img src="images\gordy_on_a_swing.jpg" alt="gordy on a swing">
 
         </div><!--#hobbies-->
 
@@ -61,5 +83,39 @@
     </div>
     
     <hr>
+    <script>
+
+        var bio = document.querySelector(`#biolink`)
+        var ed = document.querySelector(`#edlink`)
+        var hobbies = document.querySelector(`#hobbieslink`)
+
+        var main = document.querySelector(`#bio`)
+        var edu = document.querySelector(`#ed`)
+        var hobb = document.querySelector(`#hobbies`)
+
+       bio.addEventListener(`click`, function(e){
+            e.preventDefault()
+            main.classList.remove(`hide`)
+            edu.classList.add(`hide`)
+            hobb.classList.add(`hide`)
+        })
+
+        ed.addEventListener(`click`, function(e){
+            e.preventDefault()
+            main.classList.add(`hide`)
+            edu.classList.remove(`hide`)
+            hobb.classList.add(`hide`)
+        })
+
+        hobbies.addEventListener(`click`, function(e){
+            e.preventDefault()
+            main.classList.add(`hide`)
+            edu.classList.add(`hide`)
+            hobb.classList.remove(`hide`)
+        })
+        
+
+        
+    </script>
 </body>
 </html>
