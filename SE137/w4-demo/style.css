@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin:0;
+    height: 100%;
+    background-color: #efefef;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+main{
+    background-color: #cfcfcf86;
+    width: 80%;
+}
+header{
+    background-color: #cfcfcf86;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border: 1px solid black;
+    padding: 0 20px 0 20px;
+}
+i{
+    font-size: 50px;
+}
+h1{
+
+}

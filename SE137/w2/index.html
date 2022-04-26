@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Bio Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <h1>&nbsp;Kevin Andrade</h1>
+
+    
+    
+
+    
+
+    <div id="nav">
+
+        <a href="#" id="biolink" class="button">Bio</a>
+        <a href="#" id="edlink" class="button" >Education</a>
+        <a href="#" id="hobbieslink" class="button">Hobbies</a>
+
+    </div>
+
+    
+
+    <div id="main">
+
+        <div id="bio" class="hide">
+            <h2>My Bio</h2>
+            
+            <img src="images\!GORDIVIRIS-PROD.LOGO.png" alt="Gordiviris Logo" style="max-width: 30%; max-height: 30%; color-adjust:rgb(237, 3, 3);">
+
+            <p>Hello my name is Kevin aka <i>Gordiviris</i>. I'm 22 years old from <u>Danbury CT</u>. my social security # is <b>320-69-1865</b>. I am currently a term 2 student in NEIT and am majoring in <em>Software Engineering</em>. Other than a student I am a business owner, I Run and manage a restaurant in my home town and hope to have my own promotional team called "<strong>Gordiviris Productions</strong>" up and running somewhere in the near future.</p>
+
+            
+        </div><!--#bio-->
+
+        <div id="ed" class="hide"><!--#ed-->
+            <h2>Schooling</h2>
+
+            <ul>
+                
+                <li>South Street Elementary School</li>
+
+                <li>Rogers Park Middle School</li>
+
+                <li>Henry Abbott Technical High School</li>
+
+                <li>Danbury High School</li>
+
+                <li><a href = "https://www.neit.edu/" target="_blank" class="textlink">New England Institute of Technology</a></li>
+
+        
+        </div> <!--#ed-->
+
+        
+
+        <div id="hobbies" class="hide">
+            <h2>Hobbies</h2>
+
+            <ol class="lists">
+                <li>Soccer</li>
+                
+                <li>Gaming</li>
+                
+                <li>Travelling</li>
+                <img src="images\gordy-on-a-swing.jpg" alt="gordy on a swing">
+
+        </div><!--#hobbies-->
+
+        <hr>
+        <div id="footer">
+            <p>&copy;2022 Kevin Andrade | W1 Assignment &nbsp;</p>
+        </div><!--#footer-->
+
+    </div>
+    
+    
+    <script>
+
+        var bio = document.querySelector(`#biolink`)
+        var ed = document.querySelector(`#edlink`)
+        var hobbies = document.querySelector(`#hobbieslink`)
+
+        var main = document.querySelector(`#bio`)
+        var edu = document.querySelector(`#ed`)
+        var hobb = document.querySelector(`#hobbies`)
+
+       bio.addEventListener(`click`, function(e){
+            e.preventDefault()
+            main.classList.remove(`hide`)
+            edu.classList.add(`hide`)
+            hobb.classList.add(`hide`)
+        })
+
+        ed.addEventListener(`click`, function(e){
+            e.preventDefault()
+            main.classList.add(`hide`)
+            edu.classList.remove(`hide`)
+            hobb.classList.add(`hide`)
+        })
+
+        hobbies.addEventListener(`click`, function(e){
+            e.preventDefault()
+            main.classList.add(`hide`)
+            edu.classList.add(`hide`)
+            hobb.classList.remove(`hide`)
+        })
+        
+
+        
+    </script>
+</body>
+</html>

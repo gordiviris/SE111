@@ -1,0 +1,56 @@
+body{
+    background-image: url("images/lightgrey.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    background-color: rgb(58, 58, 253);
+    padding-top: 2%;
+    color: white;
+    font-size: 30px;
+    
+}
+
+h2{
+    border-left: 5px solid rgb(58, 58, 253);
+    padding-left: 5px;
+}
+
+
+#footer{
+    background-color: rgb(62, 62, 62);
+    padding: 1px;
+    color: white;
+    text-align: right;
+}
+
+#nav{
+    text-align: center;
+    
+}
+
+.hide{ 
+    display: none;
+    
+}
+
+.button{
+
+    font-weight: 200;
+    color: white;
+    background-color: rgb(58, 58, 253);
+    padding: 5px;
+    text-decoration: none;
+        
+}
+
+
+a.textlink:link{
+    color: black;
+}
+
+a.textlink:visited{
+    color: black;
+}
