@@ -1,0 +1,52 @@
+#nav{
+    display: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images/blue.jpg");
+}
+h1{
+    background-color: rgb(61, 61, 253);
+    color: white;
+    padding-top: 30px;
+}
+h2{
+    
+    border-left: 5px solid rgb(61, 61, 253);
+    
+}
+#main{
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    text-align: left;
+}
+.bio{
+    padding-left: 10px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgba(150, 150, 150, 65%);
+}
+.hobby{
+    padding-left: 10px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgba(150, 150, 150, 65%)
+}
+.school{
+    padding-left: 10px;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: rgba(150, 150, 150, 65%);
+}
+a:link{
+    color: black;
+}
+#footer{
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: 10px;
+}
