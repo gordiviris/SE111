@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap%27%27');
 
 body{
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(40, 40, 40);
 }
 #header{
     display: flex;
@@ -44,7 +44,7 @@ h1{
     "ft ft ft ft ft";
     row-gap: 20px;
     column-gap: 20px;
-
+    grid-template-rows: auto;
     grid-template-columns: 19% 19% 19% 19% 19%;
 }
 
@@ -53,66 +53,169 @@ h1{
     background-image: url("images/banner.png") ;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid red;
     min-height: 388px;
-    max-height: 1200px;
+    max-height: 390px;
     
 }
 
 #bleft{
     grid-area: bl;
-    border-top: 5px solid red;
+    display: grid;
+    grid-template-areas: 
+    "pr pr tl tl"
+    "pr pr ds ds"
+    "pr pr ds ds"
+    "pr pr dv by"
+    "pr pr dv dl";
+    align-content: start;
+    grid-template-rows: 20% 20% 25% 20% 20%;
+    background-color: rgba(57, 57, 57, 1);
+    border-top: 5px solid rgba(187, 9, 8, 1);
 
 }
+
 #poster{
+    grid-area: pr;
+    width: auto;
+    height: auto;
+    max-height: 550px;
+    max-width: 500px;
     
-    max-height: 478px;
-    max-width: 310px;
+}
+
+#ann{
+    grid-area: tl;
+    font-family: 'rock salt';
+    color: rgba(255, 29, 41, 1);
+    max-width: 350px;
+    border-bottom: 4px solid rgba(187, 9, 8, 1);
+    padding-bottom: 20px;
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 40px;
     
+    
+}
+
+
+#desc{
+    grid-area: ds;
+    color: white;
+    margin-top: -10px;
+    font-family: 'poppins';
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 350px;
+    max-height: 250px;
 }
 
 #dvd{
+    grid-area: dv;
     height: auto;
     width: auto;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 175px;
+    max-height: 175px;
+    margin-top: -20px;
+} 
+
+#buy{
+    grid-area: by;
+    justify-self: start;
+    margin-top: -20px;
+    font-family: 'poppins';
+    text-decoration: underline;
+    color: rgb(38,171,179);
+    font-size: 18px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+#price{
+    grid-area: dl;
+    margin-top: -70px;
+    font-family: 'Teko';
+    color: white;
+    font-size: 95px;
+    border-bottom: 3px solid white;
+    min-height: 100px;
+    max-width: 180px;
+
+
 }
 
 #bmid{
     grid-area: bm;
-    border-top: 5px solid red;
+    background-color: rgba(57, 57, 57, 1);
+    border-top: 5px solid rgba(187, 9, 8, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 
 }
 
 #pennant{
     height: auto;
     width: auto;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 650px;
+    max-height: 250px;
+    padding-top: 20px;
+}
+
+#bmid > p{
+    padding-left: 40px;
+    line-height: 36px;
+    font-family: 'poppins';
+    font-size: 24px;
+    color: white;
+    
 }
 
 #right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-area: rt;
-    border: 5px solid red;
+    background-color: rgba(57, 57, 57, 1);
+    font-family: 'Roboto';
 }
 
 #sign{
     height: auto;
     width: auto;
+    max-width: 350px;
+    max-height: 350px;
+    padding-top: 20px;
+}
+
+#right > p{
+    color: white;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 20px;
     max-width: 300px;
-    max-height: 300px;
+    font-size: 18px;
+
+}
+
+#right > p > b{
+    color: rgba(187, 9, 8, 1);
+
 }
 
 #water{
     height: auto;
     width: auto;
     max-width: 300px;
-    max-height: 300px;
+    max-height: 175px;
+    padding-bottom: 15px;
 }
 
 #footer{
     grid-area: ft;
     background-color: black;
     color: white;
+    padding-left: 20px;
 }
 
